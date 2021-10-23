@@ -1,3 +1,4 @@
+
 public class Algorithms {
 
     //Add elements from two strings
@@ -57,6 +58,13 @@ public class Algorithms {
 
     }
 
+    //Write a function that takes a string containing moves made in a 7x7 grid.
+    // The moves are: "w" - up, "s" - down, "a" - left, "d" - right.
+    // Moves in the string are separated from each other by a comma.
+    // The start is in the point (1,1) (left-bottom) and, the goal is to reach position (7,7) (right-top).
+    // The function returns the number of moves that have to be done to reach (7,7), after making moves specified in the given string.
+    // For example: consider string = "(w,d,s,d,w,w,d,w)".
+    // After making that moves, you will be in the point (4,4), from this position, you need 6 moves to reach the point (7,7).
     public static int movementsGrid(String input){
         String[] split = input.split("\\W");
 
@@ -92,7 +100,8 @@ public class Algorithms {
     }
 
     public static void main(String[] args) {
-
+        String[] numbers = {"[3,5,6]","[6,3,9,2,5,10,34]"};
+        System.out.println(sumStringValues(numbers));
     }
 
 }
